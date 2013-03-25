@@ -12,7 +12,7 @@ $faq->title = $title;
 $faq->description = $body;
 $faq->access_id = ACCESS_PUBLIC;
 
-$faq_guid = $blog->save();
+$faq_guid = $faq->save();
 
 if ($faq_guid) {
 	system_message(elgg_echo('faq:save:success'));
